@@ -34,7 +34,7 @@ def data():
 
 @app.route('/ip.html', methods=['GET'])
 def ip_lookup():
-    return 0
+    return "Test"
 
 @app.route('/api/ip/<string:this_ip>', methods=['GET'])
 def ip_view(this_ip):
