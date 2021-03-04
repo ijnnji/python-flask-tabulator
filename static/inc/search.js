@@ -20,3 +20,4 @@ function matchAny(data, filterParams) {
     }
     return match;
 }
+
