@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="{{url_for('static', filename = 'inc/dist/css/tabulator_midnight.min.css')}}" rel="stylesheet">
+        <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+        <script type="text/javascript" src="{{url_for('static', filename = 'inc/dist/js/tabulator.min.js')}}"> </script>
+        <script type="text/javascript" src="{{url_for('static', filename = 'inc/jspdf.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename = 'inc/jspdf.plugin.autotable.js')}}"></script>
+    </head>
+    <body>
+        <br />
+        <br />
+        <div>
+            <input style="float: left;" type="text" id="fSearch" name="fSearch" placeholder="Search" />
+            <script type="text/javascript" src="{{url_for('static', filename = 'inc/search.js')}}"> </script>
+        </div>
+        <div>
+            <button style="float: left;" id="download-csv">Download CSV</button>
+            <button id="download-pdf">Download PDF</button>
+        </div>
+        <br />
+        <br />
+        <div id="example-table"></div>
+        <script type="text/javascript" src="{{url_for('static', filename = 'inc/index.js')}}"></script>
+    </body>
+</html>
